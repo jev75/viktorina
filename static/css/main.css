@@ -1,0 +1,53 @@
+/* Užtikrinti, kad HTML ir BODY elementai užims visą aukštį */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fono gradientas visam puslapiui */
+body {
+    background: #abbaab;
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    background: linear-gradient(to right, #ffffff, #abbaab);
+}
+
+/* Fono gradientas #section-jumbotron sekcijai */
+#section-jumbotron {
+    background: rgba(40, 226, 233, 0.13);
+    background: -webkit-linear-gradient(to right, rgba(138, 203, 237, 0.15), rgba(79, 127, 34, 0.26));
+    background: linear-gradient(to right, rgba(143, 187, 239, 0.11), rgba(63, 195, 106, 0.25));
+}
+
+/* Konteineris, kuris užims visą likusį vietą tarp navigacinės juostos ir footer */
+.container-flex {
+    flex: 1;
+}
+
+/* Nustatyti bendrą fono spalvą ir užrašų spalvą tiek navigacinei juostai, tiek footer */
+.navbar-custom, .custom-footer-bg {
+    background-color: rgba(12,0,0,0.93); /* Pakeiskite spalvą pagal poreikį */
+    color: white !important; /* Užrašų spalva */
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Nuorodų spalva footeryje */
+.custom-footer-bg a {
+    color: white ; /* Užtikrinti nuorodų spalvą */
+    text-decoration: underline !important; /* Nuorodų pabraukimas */
+}
+
+.custom-footer-bg a:hover {
+    color: #ffd700 !important; /* Pakeiskite spalvą pagal poreikį */
+}
+
+.blue-link {
+    color: blue !important;
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Let's Quiz | Welcome {% endblock title %}
+{% block content %}
+<div class="container my-4">
+    <div class="jumbotron">
+
+	      <h2 class="text-center text-info">Jūs sėkmingai prisijungėte.</h2>
+	      <h3 class="text-info text-center">Prieš žaisdami, susipažinkite su taisyklėmis</h3>
+
+        <div class="row">
+
+            <div class="card border-info mx-4 my-4">
+                <div class="card-body text-info">
+                    <h4 class="card-title">Taisyklės:</h4>
+                    <p class="card-text">
+                        <ul style="list-style:decimal;">
+                            <li>Visi klausimai yra su keliais atsakymų variantais.</li>
+                            <li><span class="text-danger">Tik vienas atsakymas yra teisingas.</span></li>
+                            <li>Kiekvienas klausimas turi vienodus balus t.y. <span class="text-danger">4 balai už kiekvieną klausimą.</span>
+                            </li>
+                            <li>Kiekvienas klausimas rodomas tik vieną kartą.</li>
+                            <li>Stenkitės atsakyti kuo greičiau.</li>
+                            <li>Jei paspausite atnaujinimą arba grįšite į ankstesnį puslapį, jums bus pateiktas naujas klausimas, o klausimas, kurį klausėte, bus skaičiuojamas kaip bandytas.</li>
+                            <li>Klausimai kiekvienam vartotojui rodomi atsitiktine tvarka.</li>
+                            <li>Kai tik pateiksite atsakymą, jums bus nedelsiant pranešta, ar jūsų atsakymas buvo teisingas, ar neteisingas.</li>
+                        </ul>
+                    </p>
+                    <a href="{% url 'game:play' %}" class="btn btn-info">Žaisti</a>
+                </div>  
+                <div class="card-footer">Taisyklės paskutinį kartą keistos 2024</div>
+            </div>  
+        </div>  
+
+    </div>
+</div>
+{% endblock content %}

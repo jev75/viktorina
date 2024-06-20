@@ -1,0 +1,70 @@
+body {
+    background: #abbaab;
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    background: linear-gradient(to right, #ffffff, #abbaab);
+}
+
+.jumbotron {
+    background-color: #f8f9fa; /* Šviesiai pilkas fonas */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.form-check-input {
+    margin-top: 0.3rem;
+}
+
+.form-check-label {
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+}
+/* Pagrindinis logotipo stilius */
+
+.logo img {
+    max-height: 10%; /* Nustato maksimalų logotipo aukštį kaip procentą nuo tėvinio elemento aukščio */
+    width: auto; /* Išlaiko proporcijas */
+    opacity: 1; /* Peršviečiamumo efektas */
+    transition: opacity 0.3s ease; /* Sklandus perėjimas */
+    position: absolute;
+    /*top: 10px; !* Nustato viršutinį kraštą *!*/
+    left: 10px; /* Nustato kairįjį kraštą */
+    bottom: 10px; /* Nustato apatinį kraštą */
+    /*left: 50%; !* Nustato horizontalų centravimą *!*/
+    /*transform: translateX(-50%); !* Išlaiko horizontalų centravimą *!*/
+}
+
+.logo img:hover {
+    opacity: 1; /* Pilnas matomumas paslinkus pelę */
+}
+.django {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
